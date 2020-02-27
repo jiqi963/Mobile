@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">01.touchinput</string>
+    <string name="InstrumentOutput">You are enroll: %1$s in %2$s</string>
+
 </resources>

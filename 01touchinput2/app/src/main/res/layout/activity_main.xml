@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <RadioGroup
-        android:id="@+id/radiogruop"
+        android:id="@+id/radiogroup"
         android:layout_width="132dp"
         android:layout_height="111dp"
         android:layout_marginStart="139dp"
@@ -81,28 +81,28 @@
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option1" />
+            android:text="PHP" />
 
         <RadioButton
             android:id="@+id/option2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option2" />
+            android:text="JAVA" />
 
         <RadioButton
             android:id="@+id/option3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="option3" />
+            android:text="KOTLIN" />
     </RadioGroup>
 
     <Spinner
         android:id="@+id/spn1"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogruop" />
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
 
     <Button
         android:id="@+id/btn2"
@@ -118,20 +118,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="120dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radiogruop" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn2" />
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@ import androidx.core.view.isEmpty
 import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Spinner
 import android.widget.ArrayAdapter
+import android.widget.RadioButton
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,14 +38,12 @@ class MainActivity : AppCompatActivity() {
 
     inner class EnrolButtonOnClickListion : View.OnClickListener {
         override fun onClick(viwe: View?) {
-            if (radiogruop.checkedRadioButtonId.equals(-1)) {
+            if (radiogroup.checkedRadioButtonId.equals(-1)) {
                 textView4.text = "choose a radio button"
-            } else if (radiogruop.checkedRadioButtonId.equals(1)) {
-                textView4.text = "Option 1"
-            } else if (radiogruop.checkedRadioButtonId.equals(2)) {
-                textView4.text = "Option 2"
-            } else if (radiogruop.checkedRadioButtonId.equals(3)) {
-                textView4.text = "Option 3"
+            } else {
+                val radiovalue = findViewById<RadioButton>(radiogroup.checkedRadioButtonId).text
+                textView4.text =
+                    getString(R.string.InstrumentOutput, radiovalue, spn1.selectedItem.toString())
             }
         }
     }
