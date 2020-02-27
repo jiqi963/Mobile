@@ -1,0 +1,3 @@
+[submodule "mobile-course-materials"]
+	path = mobile-course-materials
+	url = git@github.com:otago-polytechnic-bit-courses/mobile-course-materials.git
